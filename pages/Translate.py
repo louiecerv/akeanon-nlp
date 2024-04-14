@@ -18,12 +18,14 @@ def app():
         model_list.append(m.name)
     selected_model = st.selectbox("Select a model", model_list)
     model = genai.GenerativeModel(model_name=selected_model)
+    if st.button("Delete Model"):
+        genai.delete_tuned_model(selected_model)
+
     text_input = st.text_area("Enter Akeanon text here:")
     if st.button("Translate to English"):
-        result = model.generate_content(text_input)
+        result = model.generate_content(f'translate to English: {text_input}')
         st.write(result.text)
-        result = model.generate_content(text_input)
-        st.write(result.text)
+
 
 
     st.write("Powered by Google Cloud Natural Language API")
