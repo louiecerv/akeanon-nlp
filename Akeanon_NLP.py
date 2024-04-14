@@ -35,9 +35,9 @@ def app():
         source_model=base_model.name,
         training_data=data_list,
         id = name,
-        epoch_count = 100,
+        epoch_count = 10,
         batch_size=64,
-        learning_rate=0.001,
+        learning_rate=0.01,
     )
 
     model = genai.get_tuned_model(f'tunedModels/{name}')
