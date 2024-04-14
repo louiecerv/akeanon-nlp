@@ -25,17 +25,17 @@ def app():
     df = df.reset_index(drop=True)
     st.write(df)
 
-    # Convert to dictionary list
-    dict_list = df.to_dict('records')
+    # Convert DataFrame to a list of dictionaries
+    data_list = df.to_dict(orient='records')
 
-    st.write(dict_list)
+    st.write(data_list)
 
     import random
     name = f'generate-num-{random.randint(0,10000)}'
 
     genai.create_tuned_model(
         source_model=base_model.name,
-        training_data=[dict_list],
+        training_data=[data_list],
         id = name,
         epoch_count = 100,
         batch_size=4,
