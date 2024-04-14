@@ -4,10 +4,9 @@ import streamlit as st
 import os
 import time
 import pandas as pd
+import matplotlib.pyplot as plt
 import seaborn as sns
 
-#GOOGLE_API_KEY=st.secrets["GOOGLE_API_KEY"]
-#genai.configure(api_key=GOOGLE_API_KEY)
 
 def app():
     st.title("Akeanon NLP")
@@ -17,7 +16,8 @@ def app():
     for i, m in zip(range(5), genai.list_tuned_models()):
         model_list.append(m.name)
 
-    selected_model = st.selectbox("Select a model", model_list)
+    if len(model_list) > 0:
+        selected_model = st.selectbox("Select a model", model_list)
 
     if st.button("Analyze Text"):
         model = genai.GenerativeModel(model_name=selected_model)
@@ -34,7 +34,7 @@ def app():
             if "createTunedModel" in m.supported_generation_methods][0]
 
         st.write(base_model)
-        df = pd.read_csv('./akeanon-words.csv', header=0, index_col=None)
+        df = pd.read_csv('./akeanon-sentences.csv', header=0, index_col=None)
         df = df.reset_index(drop=True)
         st.write(df)
 
@@ -49,8 +49,8 @@ def app():
             training_data=data_list,
             id = name,
             epoch_count = 10,
-            batch_size=64,
-            learning_rate=0.01,
+            batch_size=10,
+            learning_rate=0.001,
         )
 
         model = genai.get_tuned_model(f'tunedModels/{name}')
@@ -62,9 +62,10 @@ def app():
 
         model = operation.result()
         snapshots = pd.DataFrame(model.tuning_task.snapshots)
+        fig, ax = plt.subplots()
         sns.lineplot(data=snapshots, x = 'epoch', y='mean_loss')
-
-        
+        st.pyplot(fig)
+    
     st.write("Powered by Google Cloud Natural Language API")
 
 #run the app

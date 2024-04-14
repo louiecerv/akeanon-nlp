@@ -1,51 +1,101 @@
-text_input,output
- Umagto ako sa baeay sang igkampod.,I went to my cousin's house.
- Mataeom ro siyaw.,The knife is sharp.
- Maeapad ro eugta ni Mang Kanor.,Mang Kanor's lot is wide.
- Nagdamgo ako kabii.,I dreamed last night.
- Bilog ro buean.,The moon is round.
- Gin-eapog ni Josh ro bola.,Josh threw the ball.
- Nagbakae si Maya sa baraka.,Maya bought from the store.
- Nagbalintong si Dan sa hagdan.,Dan fell down the stairs.
- Mahumot ro bueak.,The flowers smell nice.
- Nag-ihapon ako sa baeay sang klasmeyt.,I ate dinner at my classmate's house.
- Makaron eang owa nag-ilabas si Jonathan.,Only today did Jonathan not eat lunch.
- Mabueak ro eambong nga suksok ni Maria.,The clothes that Maria is wearing are flowery.
- Gin-eapog ni Asi ro sudlay sa idaeom it duyan.,Asi threw the comb under the craddle.
- Maaeam magsueat it mga istorya nga makataeangis ro akong kaklase.,My classmate is smart when it comes to writing stories that make people cry.
- Maeapad ro gaob nga nabu-oe nana sa pagbalintong sa hagdanan.,He got a wide bruise when he fell from the stairs.
- Ginbu-oe ni Sean ro baeonan ni Mark.,Sean took Mark's lunch-box.
- Napuno it baeas ro anang banig dahil kakaeangoy na eang sa baybay.,His mat became full of sand because he just went swimming at the beach.
- Ginhueat ni Aaron si Drey nga maghueag agod magdungan sanda.,Aaron waited for Drey so that they could move in unison.
- Maeapad ro binakae nga haboe ni Ronnie para sa anang katre.,The blanket that Ronnie bought for his bed was wide.
- Ginbugkos nana ro mga eansang ag gintago sa anang buesa.,He tied the nails together and hid them in his pocket.
- Si Bella hay gwapa nga bayi.,Bella is a beautiful girl.
- Idto sa bueutangan ro tinapay.,The bread is in the container.
- Madasig magdaeagan ro ayam.,The dog runs fast.
- Mahilig sa tanom si Janette.,Janette loves plants.
- Indi makita ni Jessica ro euwag.,Jessica cannot find the ladle.
- Gakita kami hinaga ni Dan sa plaza.,Dan and I will meet at the plaza tomorrow.
- Pirmi nga naulihi si Kyle sa klase.,Kyle is always late in class.
- Naubos eagi ro kwarta nga ginapadaea ni nanay.,The money that mother sent was already used up.
- Nagpaayos ako it ngipon kahapon.,I had my teeth fixed yesterday.
- Ginregaluhan ako ni Nick it pahumot.,Nick gifted me a perfume.
- Si Antonio ag Maria ro pangaean it akong ginikanan.,Antonio and Maria are the names of my parents.
- Ginhakwat ni James ro sangka sako nga bugas gamit ra abaga.,James used his shoulders to lift a sack of rice.
- Abante it daywa nga puntos ro grupo nanday Edward.,Edward�s team is leading with 2 points.
- Mas mabahoe ro alima ni Jane kaysa kay Kaila.,Jane�s hand is bigger than Kaila�s.
- Ako hay may napueo nga tudlo sa akong daywang alima.,I have 10 fingers on both of my hands.
- Adlaw-adlaw ginabunyagan ni lola Rosa ro ana nga mga tanom.,Lola Rosa waters her plants everyday.
- Manami ro among ilabas kaina.,Our lunch was very delicious.
- Sinampae ni Elsa si Anna dahil imaw hay gapina-ugtas.,Elsa slapped Anna because she is naughty.
- Maeapad ro baeay ni Pedro.,Pedro�s house is wide.
- Nagbakae it mantika si Juan sa tindahan.,Juan bought oil from the market.
- May an-um nga unga si Lolo Roberto.,Lolo Roberto has six children.
- Ginkaeos it kuring ro akong uyahon.,A cat scratched my face.
- Kanami pamantawon ro mga pispis sa sanga it puno.,The birds on the tree branch are nice to look at.
- Nagpanglimpyo si Alex sa likod it anda nga baeay gamit ro silhig.,Alex cleaned their backyard using a broom.
- Ginhutik ni Richandrey kay Kaila ro ana nga nailaan.,Richandrey whispered his crush�s name to Kaila.
- Manami ro ginabaligya nga panit it manok sa plaza.,The chicken skin being sold at the plaza is delicious.
- Ginbuksan ni Amara ro purtahan.,Amara opened the door.
- Makahaeawa ro hibayag ni Kate.,Kate�s laugh is contagious.
- Haaywanan ni Mikay ro anang kaeo.,Mikay left her hat.
- Abo kung kumaon it humay si Bobby.,Bobby eats a lot of rice.
+﻿text_input,output
+Umagto ako sa baeay sang igkampod.,I went to my cousin's house.
+Mataeom ro siyaw.,The knife is sharp.
+Maeapad ro eugta ni Mang Kanor.,Mang Kanor's lot is wide.
+Nagdamgo ako kabii.,I dreamed last night.
+Bilog ro buean.,The moon is round.
+Gin-eapog ni Josh ro bola.,Josh threw the ball.
+Nagbakae si Maya sa baraka.,Maya bought from the store.
+Nagbalintong si Dan sa hagdan.,Dan fell down the stairs.
+Mahumot ro bueak.,The flowers smell nice.
+Nag-ihapon ako sa baeay sang klasmeyt.,I ate dinner at my classmate's house.
+Makaron eang owa nag-ilabas si Jonathan.,Only today did Jonathan not eat lunch.
+Mabueak ro eambong nga suksok ni Maria.,The clothes that Maria is wearing are flowery.
+Gin-eapog ni Asi ro sudlay sa idaeom it duyan.,Asi threw the comb under the craddle.
+Maaeam magsueat it mga istorya nga makataeangis ro akong kaklase.,My classmate is smart when it comes to writing stories that make people cry.
+Maeapad ro gaob nga nabu-oe nana sa pagbalintong sa hagdanan.,He got a wide bruise when he fell from the stairs.
+Ginbu-oe ni Sean ro baeonan ni Mark.,Sean took Mark's lunch-box.
+Napuno it baeas ro anang banig dahil kakaeangoy na eang sa baybay.,His mat became full of sand because he just went swimming at the beach.
+Ginhueat ni Aaron si Drey nga maghueag agod magdungan sanda.,Aaron waited for Drey so that they could move in unison.
+Maeapad ro binakae nga haboe ni Ronnie para sa anang katre.,The blanket that Ronnie bought for his bed was wide.
+Ginbugkos nana ro mga eansang ag gintago sa anang buesa.,He tied the nails together and hid them in his pocket.
+Si Bella hay gwapa nga bayi.,Bella is a beautiful girl.
+Idto sa bueutangan ro tinapay.,The bread is in the container.
+Madasig magdaeagan ro ayam.,The dog runs fast.
+Mahilig sa tanom si Janette.,Janette loves plants.
+Indi makita ni Jessica ro euwag.,Jessica cannot find the ladle.
+Gakita kami hinaga ni Dan sa plaza.,Dan and I will meet at the plaza tomorrow.
+Pirmi nga naulihi si Kyle sa klase.,Kyle is always late in class.
+Naubos eagi ro kwarta nga ginapadaea ni nanay.,The money that mother sent was already used up.
+Nagpaayos ako it ngipon kahapon.,I had my teeth fixed yesterday.
+Ginregaluhan ako ni Nick it pahumot.,Nick gifted me a perfume.
+Si Antonio ag Maria ro pangaean it akong ginikanan.,Antonio and Maria are the names of my parents.
+Ginhakwat ni James ro sangka sako nga bugas gamit ra abaga.,James used his shoulders to lift a sack of rice.
+Abante it daywa nga puntos ro grupo nanday Edward.,Edward’s team is leading with 2 points.
+Mas mabahoe ro alima ni Jane kaysa kay Kaila.,Jane’s hand is bigger than Kaila’s.
+Ako hay may napueo nga tudlo sa akong daywang alima.,I have 10 fingers on both of my hands.
+Adlaw-adlaw ginabunyagan ni lola Rosa ro ana nga mga tanom.,Lola Rosa waters her plants everyday.
+Manami ro among ilabas kaina.,Our lunch was very delicious.
+Sinampae ni Elsa si Anna dahil imaw hay gapina-ugtas.,Elsa slapped Anna because she is naughty.
+Maeapad ro baeay ni Pedro.,Pedro’s house is wide.
+Nagbakae it mantika si Juan sa tindahan.,Juan bought oil from the market.
+May an-um nga unga si Lolo Roberto.,Lolo Roberto has six children.
+Ginkaeos it kuring ro akong uyahon.,A cat scratched my face.
+Kanami pamantawon ro mga pispis sa sanga it puno.,The birds on the tree branch are nice to look at.
+Nagpanglimpyo si Alex sa likod it anda nga baeay gamit ro silhig.,Alex cleaned their backyard using a broom.
+Ginhutik ni Richandrey kay Kaila ro ana nga nailaan.,Richandrey whispered his crush’s name to Kaila.
+Manami ro ginabaligya nga panit it manok sa plaza.,The chicken skin being sold at the plaza is delicious.
+Ginbuksan ni Amara ro purtahan.,Amara opened the door.
+Makahaeawa ro hibayag ni Kate.,Kate’s laugh is contagious.
+Haaywanan ni Mikay ro anang kaeo.,Mikay left her hat.
+Abo kung kumaon it humay si Bobby.,Bobby eats a lot of rice.
+I went to my cousin's house.,Umagto ako sa baeay sang igkampod.
+The knife is sharp.,Mataeom ro siyaw.
+Mang Kanor's lot is wide.,Maeapad ro eugta ni Mang Kanor.
+I dreamed last night.,Nagdamgo ako kabii.
+The moon is round.,Bilog ro buean.
+Josh threw the ball.,Gin-eapog ni Josh ro bola.
+Maya bought from the store.,Nagbakae si Maya sa baraka.
+Dan fell down the stairs.,Nagbalintong si Dan sa hagdan.
+The flowers smell nice.,Mahumot ro bueak.
+I ate dinner at my classmate's house.,Nag-ihapon ako sa baeay sang klasmeyt.
+Only today did Jonathan not eat lunch.,Makaron eang owa nag-ilabas si Jonathan.
+The clothes that Maria is wearing are flowery.,Mabueak ro eambong nga suksok ni Maria.
+Asi threw the comb under the craddle.,Gin-eapog ni Asi ro sudlay sa idaeom it duyan.
+My classmate is smart when it comes to writing stories that make people cry.,Maaeam magsueat it mga istorya nga makataeangis ro akong kaklase.
+He got a wide bruise when he fell from the stairs.,Maeapad ro gaob nga nabu-oe nana sa pagbalintong sa hagdanan.
+Sean took Mark's lunch-box.,Ginbu-oe ni Sean ro baeonan ni Mark.
+His mat became full of sand because he just went swimming at the beach.,Napuno it baeas ro anang banig dahil kakaeangoy na eang sa baybay.
+Aaron waited for Drey so that they could move in unison.,Ginhueat ni Aaron si Drey nga maghueag agod magdungan sanda.
+The blanket that Ronnie bought for his bed was wide.,Maeapad ro binakae nga haboe ni Ronnie para sa anang katre.
+He tied the nails together and hid them in his pocket.,Ginbugkos nana ro mga eansang ag gintago sa anang buesa.
+Bella is a beautiful girl.,Si Bella hay gwapa nga bayi.
+The bread is in the container.,Idto sa bueutangan ro tinapay.
+The dog runs fast.,Madasig magdaeagan ro ayam.
+Janette loves plants.,Mahilig sa tanom si Janette.
+Jessica cannot find the ladle.,Indi makita ni Jessica ro euwag.
+Dan and I will meet at the plaza tomorrow.,Gakita kami hinaga ni Dan sa plaza.
+Kyle is always late in class.,Pirmi nga naulihi si Kyle sa klase.
+The money that mother sent was already used up.,Naubos eagi ro kwarta nga ginapadaea ni nanay.
+I had my teeth fixed yesterday.,Nagpaayos ako it ngipon kahapon.
+Nick gifted me a perfume.,Ginregaluhan ako ni Nick it pahumot.
+Antonio and Maria are the names of my parents.,Si Antonio ag Maria ro pangaean it akong ginikanan.
+James used his shoulders to lift a sack of rice.,Ginhakwat ni James ro sangka sako nga bugas gamit ra abaga.
+Edward’s team is leading with 2 points.,Abante it daywa nga puntos ro grupo nanday Edward.
+Jane’s hand is bigger than Kaila’s.,Mas mabahoe ro alima ni Jane kaysa kay Kaila.
+I have 10 fingers on both of my hands.,Ako hay may napueo nga tudlo sa akong daywang alima.
+Lola Rosa waters her plants everyday.,Adlaw-adlaw ginabunyagan ni lola Rosa ro ana nga mga tanom.
+Our lunch was very delicious.,Manami ro among ilabas kaina.
+Elsa slapped Anna because she is naughty.,Sinampae ni Elsa si Anna dahil imaw hay gapina-ugtas.
+Pedro’s house is wide.,Maeapad ro baeay ni Pedro.
+Juan bought oil from the market.,Nagbakae it mantika si Juan sa tindahan.
+Lolo Roberto has six children.,May an-um nga unga si Lolo Roberto.
+A cat scratched my face.,Ginkaeos it kuring ro akong uyahon.
+The birds on the tree branch are nice to look at.,Kanami pamantawon ro mga pispis sa sanga it puno.
+Alex cleaned their backyard using a broom.,Nagpanglimpyo si Alex sa likod it anda nga baeay gamit ro silhig.
+Richandrey whispered his crush’s name to Kaila.,Ginhutik ni Richandrey kay Kaila ro ana nga nailaan.
+The chicken skin being sold at the plaza is delicious.,Manami ro ginabaligya nga panit it manok sa plaza.
+Amara opened the door.,Ginbuksan ni Amara ro purtahan.
+Kate’s laugh is contagious.,Makahaeawa ro hibayag ni Kate.
+Mikay left her hat.,Haaywanan ni Mikay ro anang kaeo.
+Bobby eats a lot of rice.,Abo kung kumaon it humay si Bobby.
