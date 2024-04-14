@@ -15,7 +15,6 @@ def app():
     model_list = []
     
     for i, m in zip(range(5), genai.list_tuned_models()):
-        st.write(m.name)  
         model_list.append(m.name)
 
     selected_model = st.selectbox("Select a model", model_list)
