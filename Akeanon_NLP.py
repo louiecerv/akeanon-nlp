@@ -4,8 +4,8 @@ import streamlit as st
 import os
 import time
 
-GOOGLE_API_KEY=st.secrets["GOOGLE_API_KEY"]
-genai.configure(api_key=GOOGLE_API_KEY)
+#GOOGLE_API_KEY=st.secrets["GOOGLE_API_KEY"]
+#genai.configure(api_key=GOOGLE_API_KEY)
 
 def app():
     st.title("Akeanon NLP")
