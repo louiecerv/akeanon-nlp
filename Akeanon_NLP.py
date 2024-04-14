@@ -12,44 +12,49 @@ import seaborn as sns
 def app():
     st.title("Akeanon NLP")
     st.write("This app uses Google's Natural Language Processing API to analyze Akeanon text.")
-
+    model_list = []
+    
     for i, m in zip(range(5), genai.list_tuned_models()):
         st.write(m.name)  
+        model_list.append(m.name)
 
-    base_model = [
-        m for m in genai.list_models()
-        if "createTunedModel" in m.supported_generation_methods][0]
+    model = st.selectbox("Select a model", model_list)
+    
+    if st.button("Create Tuned Model"):
+        base_model = [
+            m for m in genai.list_models()
+            if "createTunedModel" in m.supported_generation_methods][0]
 
-    st.write(base_model)
-    df = pd.read_csv('./akeanon-words.csv', header=0, index_col=None)
-    df = df.reset_index(drop=True)
-    st.write(df)
+        st.write(base_model)
+        df = pd.read_csv('./akeanon-words.csv', header=0, index_col=None)
+        df = df.reset_index(drop=True)
+        st.write(df)
 
-    # Convert DataFrame to a list of dictionaries
-    data_list = df.to_dict(orient='records')
+        # Convert DataFrame to a list of dictionaries
+        data_list = df.to_dict(orient='records')
 
-    import random
-    name = f'generate-num-{random.randint(0,10000)}'
+        import random
+        name = f'generate-num-{random.randint(0,10000)}'
 
-    operation = genai.create_tuned_model(
-        source_model=base_model.name,
-        training_data=data_list,
-        id = name,
-        epoch_count = 10,
-        batch_size=64,
-        learning_rate=0.01,
-    )
+        operation = genai.create_tuned_model(
+            source_model=base_model.name,
+            training_data=data_list,
+            id = name,
+            epoch_count = 10,
+            batch_size=64,
+            learning_rate=0.01,
+        )
 
-    model = genai.get_tuned_model(f'tunedModels/{name}')
-    st.write(model)
-     
-    for status in operation.wait_bar():
-        time.sleep(1)
-        st.write(operation.metadata)
+        model = genai.get_tuned_model(f'tunedModels/{name}')
+        st.write(model)
+        
+        for status in operation.wait_bar():
+            time.sleep(1)
+            st.write(operation.metadata)
 
-    model = operation.result()
-    snapshots = pd.DataFrame(model.tuning_task.snapshots)
-    sns.lineplot(data=snapshots, x = 'epoch', y='mean_loss')
+        model = operation.result()
+        snapshots = pd.DataFrame(model.tuning_task.snapshots)
+        sns.lineplot(data=snapshots, x = 'epoch', y='mean_loss')
 
         
     st.write("Powered by Google Cloud Natural Language API")
