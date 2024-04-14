@@ -29,9 +29,22 @@ def app():
     dict_list = df.to_dict('records')
 
     st.write(dict_list)
+    
+    import random
+    name = f'generate-num-{random.randint(0,10000)}'
 
+    genai.create_tuned_model(
+        source_model=base_model.name,
+        training_data=[dict_list],
+        id = name,
+        epoch_count = 100,
+        batch_size=4,
+        learning_rate=0.001,
+    )
+
+    model = genai.get_tuned_model(f'tunedModels/{name}')
+    st.write(model)
      
-
     st.write("Powered by Google Cloud Natural Language API")
 
 #run the app
