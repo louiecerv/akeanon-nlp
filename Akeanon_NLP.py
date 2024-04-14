@@ -21,8 +21,10 @@ def app():
     selected_model = st.selectbox("Select a model", model_list)
 
     if st.button("Analyze Text"):
-        model = genai.get_tuned_model(selected_model)
-        st.write(model)
+        model = genai.GenerativeModel(model_name=selected_model)
+        text_input = st.text_area("Enter Akeanon text here:")
+        result = model.generate_content(text_input)
+        st.write(result.text)
 
     if st.button("Create Tuned Model"):
         base_model = [
