@@ -28,12 +28,10 @@ def app():
     # Convert DataFrame to a list of dictionaries
     data_list = df.to_dict(orient='records')
 
-    st.write(data_list)
-
     import random
     name = f'generate-num-{random.randint(0,10000)}'
 
-    genai.create_tuned_model(
+    operation = genai.create_tuned_model(
         source_model=base_model.name,
         training_data=data_list,
         id = name,
@@ -45,6 +43,16 @@ def app():
     model = genai.get_tuned_model(f'tunedModels/{name}')
     st.write(model)
      
+    for status in operation.wait_bar():
+        time.sleep(30)
+
+    import pandas as pd
+    import seaborn as sns
+    model = operation.result()
+    snapshots = pd.DataFrame(model.tuning_task.snapshots)
+    sns.lineplot(data=snapshots, x = 'epoch', y='mean_loss')
+
+        
     st.write("Powered by Google Cloud Natural Language API")
 
 #run the app
