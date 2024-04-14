@@ -21,7 +21,7 @@ def app():
     selected_model = st.selectbox("Select a model", model_list)
 
     if st.button("Analyze Text"):
-        model = genai.get_tuned_model(f'tunedModels/{selected_model}')
+        model = genai.get_tuned_model(selected_model)
         st.write(model)
 
     if st.button("Create Tuned Model"):
