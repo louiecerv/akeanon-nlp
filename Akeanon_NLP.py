@@ -18,8 +18,12 @@ def app():
         st.write(m.name)  
         model_list.append(m.name)
 
-    model = st.selectbox("Select a model", model_list)
-    
+    selected_model = st.selectbox("Select a model", model_list)
+
+    if st.button("Analyze Text"):
+        model = genai.get_tuned_model(f'tunedModels/{selected_model}')
+        st.write(model)
+
     if st.button("Create Tuned Model"):
         base_model = [
             m for m in genai.list_models()
