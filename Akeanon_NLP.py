@@ -22,14 +22,13 @@ def app():
 
     st.write(base_model)
     df = pd.read_csv('./akeanon-words.csv', header=0)
-    df.reset_index(drop=True)
+    df = df.reset_index(drop=True)
     st.write(df)
 
     # Convert to dictionary list
     dict_list = df.to_dict('records')
 
-    st.write(dict_list)
-    
+
     import random
     name = f'generate-num-{random.randint(0,10000)}'
 
