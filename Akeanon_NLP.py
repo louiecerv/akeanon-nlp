@@ -45,6 +45,7 @@ def app():
      
     for status in operation.wait_bar():
         time.sleep(1)
+        st.write(status)
 
     model = operation.result()
     snapshots = pd.DataFrame(model.tuning_task.snapshots)
