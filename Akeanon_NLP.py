@@ -28,6 +28,7 @@ def app():
     # Convert to dictionary list
     dict_list = df.to_dict('records')
 
+    st.write(dict_list)
 
     import random
     name = f'generate-num-{random.randint(0,10000)}'
