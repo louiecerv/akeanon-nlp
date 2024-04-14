@@ -3,6 +3,7 @@ import google.generativeai as genai
 import streamlit as st
 import os
 import time
+from google.generativeai.v1.model import Model
 
 #GOOGLE_API_KEY=st.secrets["GOOGLE_API_KEY"]
 #genai.configure(api_key=GOOGLE_API_KEY)
