@@ -12,7 +12,7 @@ def app():
     st.write("This app uses Google's Natural Language Processing API to analyze Akeanon text.")
 
     for i, m in zip(range(5), genai.list_tuned_models()):
-    st.write(m.name)    
+        st.write(m.name)    
    
     st.write("Powered by Google Cloud Natural Language API")
 
