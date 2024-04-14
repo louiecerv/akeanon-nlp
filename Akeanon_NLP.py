@@ -35,7 +35,7 @@ def app():
 
     genai.create_tuned_model(
         source_model=base_model.name,
-        training_data=[data_list],
+        training_data=data_list,
         id = name,
         epoch_count = 100,
         batch_size=4,
