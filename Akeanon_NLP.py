@@ -4,7 +4,7 @@ import streamlit as st
 import os
 import time
 import pandas as pd
-
+import seaborn as sns
 
 #GOOGLE_API_KEY=st.secrets["GOOGLE_API_KEY"]
 #genai.configure(api_key=GOOGLE_API_KEY)
@@ -46,8 +46,6 @@ def app():
     for status in operation.wait_bar():
         time.sleep(30)
 
-    import pandas as pd
-    import seaborn as sns
     model = operation.result()
     snapshots = pd.DataFrame(model.tuning_task.snapshots)
     sns.lineplot(data=snapshots, x = 'epoch', y='mean_loss')
