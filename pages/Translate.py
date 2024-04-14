@@ -16,8 +16,9 @@ def app():
     
     for i, m in zip(range(5), genai.list_tuned_models()):
         model_list.append(m.name)
-    selected_model = st.selectbox("Select a model", model_list)
-    model = genai.GenerativeModel(model_name=selected_model)
+    if len(model_list) > 0:
+        selected_model = st.selectbox("Select a model", model_list)
+        model = genai.GenerativeModel(model_name=selected_model)
     if st.button("Delete Model"):
         genai.delete_tuned_model(selected_model)
 
