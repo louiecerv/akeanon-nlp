@@ -23,6 +23,9 @@ def app():
     if st.button("Analyze Text"):
         model = genai.GenerativeModel(model_name=selected_model)
         text_input = st.text_area("Enter Akeanon text here:")
+        if st.button("Translate to English"):
+            result = model.generate_content(text_input)
+            st.write(result.text)
         result = model.generate_content(text_input)
         st.write(result.text)
 
