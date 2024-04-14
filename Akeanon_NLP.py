@@ -21,7 +21,7 @@ def app():
         if "createTunedModel" in m.supported_generation_methods][0]
 
     st.write(base_model)
-    df = pd.read_csv('./akeanon-words.csv')
+    df = pd.read_csv('./akeanon-words.csv', header=None)
     st.write(df)
 
      
