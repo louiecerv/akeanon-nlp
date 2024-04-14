@@ -36,7 +36,7 @@ def app():
         training_data=data_list,
         id = name,
         epoch_count = 100,
-        batch_size=4,
+        batch_size=64,
         learning_rate=0.001,
     )
 
