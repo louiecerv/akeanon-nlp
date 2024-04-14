@@ -21,7 +21,8 @@ def app():
         if "createTunedModel" in m.supported_generation_methods][0]
 
     st.write(base_model)
-    df = pd.read_csv('./akeanon-words.csv', header=0, index=False)
+    df = pd.read_csv('./akeanon-words.csv', header=0)
+    df.reset_index(drop=True)
     st.write(df)
 
     # Convert to dictionary list
