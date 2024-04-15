@@ -7,7 +7,6 @@ import pandas as pd
 import seaborn as sns
 
 
-
 def handle_gemini_response(response):
   try:
     # Try using the quick text accessor
