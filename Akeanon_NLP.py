@@ -34,7 +34,7 @@ def app():
     df_to_jsonl(df, 'data.jsonl')
      
     st.subheader("Create Tuned Model")
-    st.write(base_model)   
+
     model_list = []
     for i, m in zip(range(5), genai.list_tuned_models()):
         model_list.append(m.name)
@@ -59,6 +59,7 @@ def app():
         # Convert DataFrame to a list of dictionaries
         data_list = df.to_dict(orient='records')
 
+        st.write(base_model) 
         import random
         name = f'generate-num-{random.randint(0,10000)}'
 
