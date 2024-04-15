@@ -6,8 +6,8 @@ import time
 import pandas as pd
 import seaborn as sns
 
-#GOOGLE_API_KEY=st.secrets["GOOGLE_API_KEY"]
-#genai.configure(api_key=GOOGLE_API_KEY)
+
+
 def handle_gemini_response(response):
   try:
     # Try using the quick text accessor
@@ -46,9 +46,12 @@ def app():
             st.write(f"An error occured: {e}")
 
     if st.button("Translate to Akeanon"):
-        result = model.generate_content(f'translate to Akeanon: {text_input}')
-        st.write(result.text)
-
+        try:
+            result = model.generate_content(f'translate to Akeanon: {text_input}')
+            text = handle_gemini_response(result)
+            st.write(result.text)
+        except Exception as e:
+            st.write(f"An error occured: {e}")
 
     st.write("Powered by Google Cloud Natural Language API")
 
